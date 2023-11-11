@@ -1,0 +1,435 @@
+/* Setting the text color */
+.text-color {
+    color: blue;
+}
+
+/* Alignment of text */
+.text-align-center {
+    text-align: center;
+}
+
+/* Indentation of text */
+.text-indent {
+    text-indent: 20px;
+}
+
+/* Decoration of text */
+.text-decoration {
+    text-decoration: underline;
+}
+
+/* Sets the spacing between characters */
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+/* Sets the spacing between words */
+.word-spacing {
+    word-spacing: 10px;
+}
+
+/* Sets the spacing between lines of text */
+.line-height {
+    line-height: 1.5;
+}
+
+/* Preserving white-space and line breaks */
+.white-space {
+    white-space: pre;
+}
+
+/* Text wrapping inside an element */
+.text-wrap {
+    overflow-wrap: break-word;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+/* Vertical alignment of an image inside text */
+.vertical-align-img {
+    vertical-align: middle;
+}
+
+        /* Sets the font of a text */
+        .font-family {
+            font-family: "Arial", sans-serif;
+        }
+
+        /* Sets the size of the font */
+        .font-size {
+            font-size: 18px;
+        }
+
+        /* Sets the style of the font */
+        .font-style {
+            font-style: italic;
+        }
+
+        /* Sets the variant of the font */
+        .font-variant {
+            font-variant: small-caps;
+        }
+
+        /* Sets the boldness of the font */
+        .font-weight {
+            font-weight: bold;
+        }
+
+        /* Setting all font properties in a single declaration - The font shorthand property */
+        .font-all {
+            font: italic small-caps bold 24px "Times New Roman", serif;
+        }
+                /* Style different states of a link */
+        a:link {
+            color: blue; /* Default link color */
+        }
+
+        a:visited {
+            color: purple; /* Visited link color */
+        }
+
+        a:hover {
+            color: red; /* Mouse over link color */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        a:active {
+            color: green; /* Active link color */
+        }
+
+        /* Remove the default underline from hyperlinks */
+        .no-underline {
+            text-decoration: none;
+        }
+
+        /* Customize a link to look like a button */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Create image rollover effect */
+        .image-rollover {
+            display: inline-block;
+            position: relative;
+        }
+
+        .image-rollover img {
+            transition: transform 0.3s;
+        }
+
+        .image-rollover:hover img {
+            transform: scale(1.1);
+        }
+            /* Specify bullets and numbering in the lists */
+        ul {
+            list-style-type: disc; /* Bullets for unordered lists */
+        }
+
+        ol {
+            list-style-type: decimal; /* Decimal numbering for ordered lists */
+        }
+
+        /* Sets the position of list-item markers */
+        .list-position {
+            list-style-position: inside; /* Marker inside the list item */
+        }
+
+        /* Sets an image as list-item markers */
+        .list-image {
+            list-style-image: url('bullet.png'); /* Custom image as marker */
+        }
+
+        /* Setting all list properties in a single declaration - The list-style shorthand property */
+        .list-shorthand {
+            list-style: square outside url('bullet.png'); /* Using shorthand */
+        }
+
+        /* Creating a simple navigation menu with lists */
+        .nav-menu {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Creating a simple dropdown menu using lists */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+            /* Setting the borders of a table */
+        table {
+            border-collapse: collapse; /* Collapsing borders for a cleaner look */
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Border for table cells */
+            padding: 8px; /* Padding for table cells */
+            text-align: left; /* Horizontal alignment of text inside cells */
+            vertical-align: top; /* Vertical alignment of content */
+        }
+
+        /* Specify how empty cells should be displayed */
+        td.empty-cell {
+            empty-cells: show; /* Show empty cells */
+        }
+
+        /* Specify table layout algorithm - Automatic or Fixed */
+        table.auto-layout {
+            table-layout: auto; /* Automatic table layout */
+        }
+
+        table.fixed-layout {
+            table-layout: fixed; /* Fixed table layout */
+        }
+
+        /* Setting the position of table caption */
+        caption {
+            caption-side: top; /* Position the caption at the top of the table */
+            font-weight: bold;
+        }
+        /* Setting the background color of an element */
+        .background-color {
+            background-color: lightblue;
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Setting the image as element's background */
+        .background-image {
+            background-image: url('../images/images.png');
+            background-size: cover;
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Repeating background image horizontally or vertically */
+        .background-repeat {
+            background-image: url('../images/pattern.jpg');
+            background-repeat: repeat-x; /* Repeat horizontally */
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Specify the positioning of background image */
+        .background-position {
+            background-image: url('../images/images.png');
+            background-position: center;
+            height:30vh;
+            color: #fff;
+        }
+
+        /* A fixed background image that will not scroll with its containing element */
+        .fixed-background {
+            background-image: url('../images/images.png');
+            background-attachment: fixed;
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Setting all background properties at once - The background shorthand property */
+        .background-shorthand {
+            background: url('../images/images.png') no-repeat center/cover fixed lightblue;
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Setting the size of the background image */
+        .background-size {
+            background-image: url('../images/images.png');
+            background-size: 200px 100px; /* Width and height of the background image */
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Setting the background clipping */
+        .background-clip {
+            background-image: url('../images/images.png');
+            background-clip: content-box; /* Clip to content area */
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Setting the background origin */
+        .background-origin {
+            background-image: url('../images/images.png');
+            background-origin: content-box; /* Origin from content area */
+            height:30vh;
+            color: #fff;
+        }
+
+        /* Adding multiple backgrounds to an element */
+        .multiple-backgrounds {
+            background: 
+                url('../images/images.png') center/cover no-repeat,
+                url('../pattern.jpg') left top repeat;
+                height:30vh;
+                color: #fff;
+        }
+        /* Setting width and height of an element */
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        /* Setting maximum width and height of an element */
+        .container {
+            max-width: 800px;
+            max-height: 400px;
+            background-color: lightgray;
+        }
+
+        /* Setting minimum width and height of an element */
+        .content {
+            min-width: 300px;
+            min-height: 150px;
+            background-color: lightgreen;
+        }
+
+        /* Controlling overflow of content */
+        .overflow-container {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+            overflow: auto; /* Add scrollbars if content overflows */
+        }
+        /* Alignment of text and inline element inside the block-level element */
+        .block {
+            text-align: center; /* Center-align text */
+        }
+
+        .inline-element {
+            display: inline; /* Display as inline element */
+        }
+
+        /* Center alignment of block element using margin property */
+        .center-block {
+            width: 300px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 0 auto; /* Center horizontally using auto margins */
+        }
+
+        /* Aligning element horizontally using the float property */
+        .float-left {
+            float: left; /* Float element to the left */
+            width: 50%;
+            background-color: lightgreen;
+        }
+
+        .float-right {
+            float: right; /* Float element to the right */
+            width: 50%;
+            background-color: lightcoral;
+        }
+
+        /* Aligning element horizontally and vertically using the position property */
+        .positioned-element {
+            position: absolute; /* Positioning element absolutely */
+            top: 50%; /* Vertically center */
+            left: 50%; /* Horizontally center */
+            transform: translate(-50%, -50%); /* Adjust for centering */
+            background-color: lightsalmon;
+        }
+
+        /* Prevent parent collapsing with the clear property */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both; /* Clear floated elements */
+        }
+
+        /* Creating a Simple Horizontal Menu */
+        ul.horizontal-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.horizontal-menu li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+ /* Position an element relative to the browser window */
+ .fixed-position {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+}
+
+/* Position an element relative to its parent element */
+.relative-to-parent {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: lightgreen;
+}
+
+/* Position an element relative to its normal position */
+.relative-to-normal {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    background-color: lightcoral;
+}
+
+
+/* Hide an element using the visibility property */
+.hidden-element {
+    visibility: hidden;
+}
+
+/* Remove an element from DOM using the display property */
+.removed-element {
+    display: none;
+}
+
+/* Display an element as an inline element */
+.inline-element {
+    display: inline;
+    border: 1px solid lightblue;
+    padding: 5px;
+}
+
+/* Display an element as a block element */
+.block-element {
+    display: block;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Collapsing table elements */
+table {
+    border-collapse: collapse; /* Collapse table borders for a cleaner look */
+}
+
+td, th {
+    border: 1px solid #ccc; /* Border for table cells */
+    padding: 5px; /* Padding for table cells */
+}
